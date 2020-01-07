@@ -10,6 +10,7 @@
 // @license        MIT
 // ==/UserScript==
 
+window.addEventListener("DOMContentLoaded", function(){
 $('typetext').on('DOMSubtreeModified',function(event, el){
     if (!el.firstElementChild)
         return
@@ -40,7 +41,7 @@ $('typetext').on('DOMSubtreeModified',function(event, el){
     if(before){
         word = word.trim();
         if(containsAny([",", ":", ".", "!", "-", "?", ";", "_"], word)){
-            match = word.split(/[,:.!-?;_]/);
+            var match = word.split(/[,:.!-?;_]/);
             var pos_char = match[0].length;
             before = before + word.slice(0, pos_char);
             after = word.slice(pos_char) + after;
@@ -56,4 +57,5 @@ $('typetext').on('DOMSubtreeModified',function(event, el){
     childs[0].setStyle({'opacity': 0});
     childs[1].textContent = word;
     childs[2].textContent = after;
+});
 });
