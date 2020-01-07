@@ -5,6 +5,7 @@
 // @author         LaFa777
 // @description    Скрывает набираемое слово
 // @include        http://klavogonki.ru/g/*
+// @include        https://klavogonki.ru/g/*
 // @grant          none
 // @run-at         document-start
 // @license        MIT
