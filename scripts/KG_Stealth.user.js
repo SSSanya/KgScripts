@@ -3,7 +3,7 @@
 // @version        1.0
 // @namespace      klavogonki
 // @author         LaFa777
-// @description    Скрывает следующее слово
+// @description    Скрывает набираемое слово
 // @include        http://klavogonki.ru/g/*
 // @grant          none
 // @run-at         document-start
