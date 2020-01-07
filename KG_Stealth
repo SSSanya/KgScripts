@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name           KG_Stealth
+// @version        1.0
+// @namespace      klavogonki
+// @author         LaFa777
+// @description    Скрывает следующее слово
+// @include        http://klavogonki.ru/g/*
+// @grant          none
+// @run-at         document-start
+// @license        MIT
+// ==/UserScript==
+
 $('typetext').on('DOMSubtreeModified',function(event, el){
     if (!el.firstElementChild)
         return
